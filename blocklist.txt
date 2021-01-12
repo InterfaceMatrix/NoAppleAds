@@ -1,0 +1,42 @@
+# Title: No Apple ads
+# Version: 20201106.1
+# Description: Block Apple advertising on Apple devices.
+# Pi-Hole compatible format.
+# Information gathered from https://github.com/arman68/noappleads
+
+0.0.0.0 advertising.apple.com
+0.0.0.0 banners.itunes.apple.com
+0.0.0.0 iad.apple.com 
+0.0.0.0 iadcontent.apple.com
+0.0.0.0 iadctest.qwapi.com
+0.0.0.0 iadmoo.apple.com
+0.0.0.0 iadworkbench.apple.com 
+0.0.0.0 launch.apple.com 
+0.0.0.0 metrics.apple.com
+0.0.0.0 qwapi.apple.com
+0.0.0.0 securemetrics.apple.com
+
+# multiple known subdomains are covered by the definition below
+0.0.0.0 iadsdk.apple.com
+0.0.0.0 news.iadsdk.apple.com
+0.0.0.0 ca.iadsdk.apple.com 
+0.0.0.0 cf.iadsdk.apple.com 
+0.0.0.0 cs.iadsdk.apple.com 
+0.0.0.0 su.iadsdk.apple.com 
+0.0.0.0 tr.iadsdk.apple.com 
+0.0.0.0 ut.iadsdk.apple.com 
+
+# comscoreresearch is used for analystics for other customers than Apple, and uses several tld; this blocks them all
+0.0.0.0 comscoreresearch.com
+0.0.0.0 apple.comscoreresearch.com
+
+# multiple known subdomains are covered by the definition below
+0.0.0.0 advp.apple.com
+0.0.0.0 ls.advp.apple.com 
+0.0.0.0 proxy.advp.apple.com 
+0.0.0.0 webproxy.advp.apple.com
+
+# multiple known domains are covered by the definition below; also blocks other potential candidates that would use a distribution network
+0.0.0.0 iad-apple.com
+0.0.0.0 webproxy-advp.iad-apple.com
+0.0.0.0 webproxy-advp.iad-apple.com.akadns.net
