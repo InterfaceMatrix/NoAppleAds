@@ -3,6 +3,7 @@
 # Description: Block Apple advertising on Apple devices.
 # Pi-Hole compatible format.
 # Information gathered from https://github.com/arman68/noappleads
+# Additional content from: https://www.reddit.com/r/pihole/comments/jw1ath/blocking_ads_in_apple_news_app/
 
 0.0.0.0 advertising.apple.com
 0.0.0.0 banners.itunes.apple.com
@@ -40,3 +41,8 @@
 0.0.0.0 iad-apple.com
 0.0.0.0 webproxy-advp.iad-apple.com
 0.0.0.0 webproxy-advp.iad-apple.com.akadns.net
+
+# Apple News App
+0.0.0.0 mesu.g.aaplimg.com
+0.0.0.0 (\.|^)apple\.comscoreresearch\.com$
+0.0.0.0 (\.|^)e4805\.dsca\.akamaiedge\.net$
